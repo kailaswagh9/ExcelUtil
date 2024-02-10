@@ -16,6 +16,9 @@ public class ExcelPOITest {
 		String cell = reader.getCellData("register", "firstname", 2);
 		System.out.println(cell);
 		
+		String cellvalue = reader.getCellData("register", "telephone", 2);
+		System.out.println(cellvalue);
+		
 		reader.addSheet("naveen");
 		
 		Object data[][] = reader.getSheetData("register");
